@@ -1,0 +1,15 @@
+{
+  "name": "flowez",
+  "version": "0.1.0",
+  "description": "Practice electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "sush@git996",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.5"
+  },
+  "devDependencies": {}
+}

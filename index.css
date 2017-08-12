@@ -1,0 +1,72 @@
+
+body {
+    margin: 1px;
+    margin-top: 2px;
+    overflow: scroll;
+    background-color: #DBDFE1;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #808080;
+    text-align: center;
+
+}
+
+
+
+#main-content {
+
+    background-color: #FDEEE3;
+    height: 90%;
+    width: 99%;
+    margin: auto;
+    /*overflow:auto;*/
+}
+
+#btns {
+    width:60%;
+    margin-left:20%;
+    height:10%;
+    margin-bottom:10%;
+}
+#sleep {
+   font-size:large;
+}
+
+#wake {
+    font-size: large;
+}
+
+button {
+
+    width: 30%;
+    overflow:hidden;
+
+}
+#info {
+    margin: auto;
+    background-color: #FDEEE3;
+    height: 50%;
+    width: 100%;
+    font-size: 30;
+    text-align: center;
+    text-shadow: 20px 10px 10px #808080;
+}
+#stats {
+    margin:auto;
+}
+
+#ft1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: none;
+    text-align: right;
+}
