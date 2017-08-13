@@ -1,7 +1,8 @@
 //WorldIndex Script
+require('dotenv').config();// require env variable
+
+
 ; var mainP = (function (window, document, undefined) {
-
-
 
     var month = new Array();
     month[0] = "January";
@@ -32,6 +33,8 @@
 
     function sleepFunc() {
 
+  
+
         sleeptime = new Date();
 
         d3.select("#sleep").style("background","red");
@@ -60,12 +63,9 @@
     }
 
 
-    //reading files
-    fs.readFile('./package.json', 'utf-8', function(err, data){
-      alert(data.name);
-    });
 
-  
+
+
 
     footer = d3.select("#ft1").html("Sushant G.|").append("a").attr("href", "https://github.com/git996").html(" GitHub").append("i").attr("class", " large github icon");
 })(window, document);
