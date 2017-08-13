@@ -11,10 +11,10 @@ var wakedata = new Object();
 
 
 
-sleepData.hours = y;
-sleepData.turns = x;
+sleepData.hours = 8;
+sleepData.turns = 33;
 
-wakedata.time = 0900;
+wakedata.time = 09000000;
 wakedata.hours = 12;
 
 document.write(', '+sleepData.hours + ', '+wakedata.hours);
