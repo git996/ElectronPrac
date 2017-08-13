@@ -7,7 +7,7 @@ var client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-var stream = client.stream('statuses/filter', {track: 'Australia'});
+var stream = client.stream('statuses/filter', {track: 'Quadratic Equation'});
 stream.on('data', function(event) {
   //document.write(event && event.text);
   //info.html(event && event.text);

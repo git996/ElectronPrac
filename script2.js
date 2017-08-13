@@ -1,6 +1,5 @@
-var fs  =  require('fs');
 
-var Twitter = require('twitter');
+var fs  =  require('fs');
 document.write('Current Version is ' + process.version);
 content = fs.readFileSync('./package.json', 'utf-8');
 content = JSON.parse(content);
