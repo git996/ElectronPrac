@@ -19,6 +19,9 @@ wakedata.hours = 12;
 
 document.write(', '+sleepData.hours + ', '+wakedata.hours);
 sleepData.wakeTimes = wakedata;
+var w1 = window.open("", "_self");
+
+
 
 
 var sleepDataSF = JSON.stringify(sleepData);
