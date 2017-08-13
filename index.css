@@ -27,6 +27,17 @@ h1 {
     margin: auto;
     /*overflow:auto;*/
 }
+#trackKey{
+
+  margin-bottom:3%;
+  width: 10%;
+  display: flex;
+  margin-left: 45%;
+
+}
+#tweetKey{
+  margin-left:35%;
+}
 
 #btns {
     width:60%;
@@ -41,6 +52,16 @@ h1 {
 #wake {
     font-size: large;
 }
+#spotf1{
+
+  margin-bottom:3%;
+  width:15%;
+  height:40%;
+  float:right;
+
+
+
+}
 
 button {
 
@@ -50,12 +71,16 @@ button {
 }
 #info {
     margin: auto;
-    background-color: #FDEEE3;
-    height: 50%;
-    width: 100%;
-    font-size: 30;
-    text-align: center;
-    text-shadow: 20px 10px 10px #808080;
+    background-color: beige;
+    height: 40%;
+    width: 80%;
+    font-size: 1em;
+    text-align:justify;
+
+    color:grey;
+    
+    text-decoration-style: wavy;
+    margin-bottom:10px;
 }
 #stats {
     margin:auto;

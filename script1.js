@@ -19,47 +19,31 @@ require('dotenv').config();// require env variable
     month[11] = "December";
 
     maincontent = d3.select("#main-content");
+
     btns = maincontent.append("div").attr("class", "ui buttons").attr("id", "btns");
 
     sleepbtn = btns.append("button").attr("class", "ui button")
-        .attr("id", "sleep").html("Start Sleep").style("background", "pink")
+        .attr("id", "sleep").html("Tweets Tracked").style("background", "pink")
         .on("click", sleepFunc);
-    or = btns.append("div").attr("class", "or");
+    or = btns.append("div").attr("class", "").html(":");
 
     wake = btns.append("button").attr("class", "ui button")
-        .attr("id", "wake").html("I'm Awake!").style("background", "aquamarine").on("click", wakeFunc);
+        .attr("id", "wake").html("0").style("background", "aquamarine").on("click", wakeFunc);
 
-    info = maincontent.append("div").attr("class", "").attr("id", "info");
+
+    infoBox = maincontent.append("div").attr("class", "ui card").attr("id", "info");
 
     function sleepFunc() {
 
-  
 
-        sleeptime = new Date();
 
-        d3.select("#sleep").style("background","red");
-        d3.select("#wake").style("background", "aquamarine");
 
-        info.html("<b> Sleep: " + sleeptime.getDate() + "th  of " + month[sleeptime.getMonth()] + " at <em>" + sleeptime.getHours() + ":" + sleeptime.getMinutes() + ":" + sleeptime.getSeconds());
-        $("#info");
-
-        $.get("sleep.php", function (data) {
-            data;
-        });
     }
 
 
     function wakeFunc() {
 
-        sleeptime = new Date()
-        d3.select("#wake").style("background", "red");
-        d3.select("#sleep").style("background", "pink");
-        info.html("<b> Wake: " + sleeptime.getDate() + "th  of " + month[sleeptime.getMonth()] + " at <em>" + sleeptime.getHours() + ":" + sleeptime.getMinutes() + ":" + sleeptime.getSeconds());
 
-        $.get("wake.php", function (data) {
-
-            data;
-        });
     }
 
 
