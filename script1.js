@@ -65,9 +65,7 @@
       alert(data.name);
     });
 
-  //writing files
-    var sleepData = '{"hours":"3"}';
-    fs.writeFile('sleep.json', sleepData);
+  
 
     footer = d3.select("#ft1").html("Sushant G.|").append("a").attr("href", "https://github.com/git996").html(" GitHub").append("i").attr("class", " large github icon");
 })(window, document);
