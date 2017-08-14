@@ -52,7 +52,11 @@ function newKey(){
 
   stream.destroy() //destror previous open stream
   // redifine new tracking keyword and restart streaming.
+  tweetCount = 0;
+  wake.html(tweetCount);
+
   key = document.getElementById('trackKey').value;
+
   if (key == ""){
 
 
@@ -63,6 +67,7 @@ function newKey(){
 
   }
   else{
+  sleepbtn.html(key);
   streamTweets()
   infoBox.html("Tracking Tweets with Keyrowod: "+ "<b>"+key);
 
