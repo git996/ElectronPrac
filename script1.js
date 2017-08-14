@@ -32,6 +32,7 @@ require('dotenv').config();// require env variable
 
 
     infoBox = maincontent.append("div").attr("class", "ui card").attr("id", "info");
+    infoList = maincontent.append("ul").attr("id","list");
 
     function sleepFunc() {
 
