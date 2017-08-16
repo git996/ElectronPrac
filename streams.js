@@ -34,7 +34,7 @@ function streamTweets(){
     tweetCount = tweetCount+1;
     wake.html(tweetCount);
     //desktop notification
-    /*let myNotification = new Notification(event.user.screen_name, {
+    /*let myNotifcation = new Notification(event.user.screen_name, {
      body: event&&event.text
       })
 
