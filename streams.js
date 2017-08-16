@@ -9,14 +9,28 @@ var client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
+var userID;
+client.get('users/lookup', {screen_name:'iamnewdev'}, function(error, data ,response){
+  if(!error){
+    console.log('asdas')
+    console.log(data[0].id_str);
+    userID = data[0].id_str;
+  }
+  else{
+    console.log('nahhhh')
+  }
+
+});
 //default stream
 var stream = "";
 var tweetCount = 0;
 //stream Tweets and notify
+
 function streamTweets(){
-  stream = client.stream('statuses/filter', {track: key});
+  stream = client.stream('statuses/filter', {follow: userID});
   stream.on('data', function(event) {
-    infoBox.html(event.user.screen_name + ": " +  event.text);
+    console.log(event)
+    infoBox.html(event.user.id + ": " +  event.text);
     tweetCount = tweetCount+1;
     wake.html(tweetCount);
     //desktop notification

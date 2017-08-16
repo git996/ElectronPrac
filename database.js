@@ -11,19 +11,14 @@
   */
   // Initialize Firebase
 var config = {
-  apiKey: '',
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: ""
+
 };
 
 firebase.initializeApp(config);
 
 const auth = firebase.auth();
-const email = '';
-const pass = '';
+const email = 'j@gmail.com';
+const pass = '987654';
 //const promise0 = auth.createUserWithEmailAndPassword(email,pass);
 //promise0.catch(e => console.log(e.message));
 //auth.signOut();
@@ -48,7 +43,7 @@ console.log("j Logged In")
 
   dbRefList.on("child_added",function (snapshot){
     var newAttr = snapshot.val();
-    infoList.html(newAttr);
+    //infoList.html(newAttr);
 
   });
 
